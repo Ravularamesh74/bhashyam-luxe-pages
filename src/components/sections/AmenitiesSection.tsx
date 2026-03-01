@@ -1,34 +1,40 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import {
-  Home, Waves, Baby, PersonStanding,
-  ShieldCheck, Sun, Church, Flower2,
-  Map, Car, Trees, Lightbulb
+  Home,
+  Map,
+  Car,
+  Trees,
+  Lightbulb,
+  ShieldCheck,
+  Sun,
+  Baby,
+  PersonStanding,
+  Flower2,
+  Landmark,
+  Droplets,
 } from "lucide-react";
 
 const amenities = [
   { icon: Home, label: "Grand Entrance Arch" },
   { icon: Map, label: "100% Vaastu Layout" },
-  { icon: Car, label: "60 & 40 Ft Blacktop Roads" },
+  { icon: Car, label: "40 & 60 Ft Blacktop Roads" },
   { icon: Trees, label: "Avenue Plantation" },
-  { icon: Waves, label: "Underground Drainage" },
-  { icon: Lightbulb, label: "Electricity with Street Lighting" },
-  { icon: Sun, label: "Solar Street Lights" },
+  { icon: Lightbulb, label: "Underground Electricity" },
+  { icon: Droplets, label: "Underground Drainage" },
+  { icon: Sun, label: "Solar Street Lighting" },
   { icon: ShieldCheck, label: "24/7 Security" },
   { icon: Baby, label: "Children's Play Area" },
-  { icon: PersonStanding, label: "Jogging Track" },
+  { icon: PersonStanding, label: "Jogging Tracks" },
   { icon: Flower2, label: "Landscaped Parks" },
-  { icon: Church, label: "Temple Space" },
+  { icon: Landmark, label: "Temple Provision" },
 ];
 
 const AmenitiesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section
-      id="amenities"
-      className="section-padding bg-navy-gradient relative overflow-hidden"
-    >
-      {/* Background grain */}
+    <section className="section-padding bg-navy-gradient relative overflow-hidden">
+      {/* Background Grain */}
       <div className="grain-overlay absolute inset-0" />
 
       <div
@@ -40,17 +46,17 @@ const AmenitiesSection = () => {
         {/* Heading */}
         <div className="text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-gold">
-            Premium Lifestyle
+            Lifestyle & Infrastructure
           </span>
 
-          <h2 className="mt-2 font-display text-3xl font-bold text-primary-foreground md:text-4xl lg:text-5xl">
-            World-Class Infrastructure & Amenities
+          <h2 className="mt-2 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground">
+            World-Class Amenities
           </h2>
 
           <p className="mt-4 max-w-2xl mx-auto text-primary-foreground/60">
-            Designed to offer a perfect blend of lifestyle comfort and
-            long-term investment value with modern infrastructure and
-            nature-rich surroundings.
+            Designed to provide a perfect blend of modern infrastructure,
+            lifestyle comfort, and long-term investment value across all
+            Bhashyam layouts.
           </p>
         </div>
 
@@ -59,13 +65,15 @@ const AmenitiesSection = () => {
           {amenities.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="group relative flex flex-col items-center gap-3 rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-gold/40 hover:bg-gold/10 hover:shadow-lg hover:shadow-gold/10"
+              className="group relative flex flex-col items-center gap-3 rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 backdrop-blur-md transition-all duration-300 hover:border-gold/40 hover:bg-gold/10 hover:shadow-lg hover:shadow-gold/10"
             >
-              {/* Glow effect */}
+              {/* Glow */}
               <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-gold/10 to-transparent" />
 
-              <Icon className="h-10 w-10 text-gold transition-transform duration-300 group-hover:scale-110" />
+              {/* Icon */}
+              <Icon className="h-9 w-9 text-gold transition-transform duration-300 group-hover:scale-110" />
 
+              {/* Label */}
               <span className="text-sm font-medium text-primary-foreground/80 text-center">
                 {label}
               </span>
@@ -73,9 +81,9 @@ const AmenitiesSection = () => {
           ))}
         </div>
 
-        {/* Bottom Trust Line */}
-        <p className="mt-12 text-center text-primary-foreground/50 text-sm">
-          All amenities are planned as per modern gated community standards.
+        {/* Bottom Line */}
+        <p className="mt-12 text-center text-sm text-primary-foreground/50">
+          Premium infrastructure that enhances both lifestyle and land value.
         </p>
       </div>
     </section>

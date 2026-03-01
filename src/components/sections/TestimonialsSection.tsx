@@ -7,36 +7,35 @@ import {
   Quote,
 } from "lucide-react";
 
-/* UPDATED REALISTIC TESTIMONIALS */
 const testimonials = [
   {
-    text: "Investing with Bhashyam Developers was the best decision. Clear documentation and excellent support throughout the buying process.",
+    text: "Investing with Bhashyam Developers was the best decision. Transparent documentation and smooth registration process.",
     name: "Ravi Kumar",
-    role: "IT Professional, Gachibowli",
+    role: "IT Professional",
   },
   {
-    text: "Premium layout and great location near ORR. The team guided us from booking to registration smoothly.",
+    text: "Premium layouts near ORR with excellent appreciation potential. Highly recommended for land investment.",
     name: "Priya Sharma",
-    role: "Doctor, Jubilee Hills",
+    role: "Doctor",
   },
   {
-    text: "I purchased a plot near the RRR corridor and already seeing good appreciation. Highly trustworthy developers.",
+    text: "Clear legal titles and great customer support. I already referred multiple friends.",
     name: "Suresh Reddy",
     role: "Business Owner",
   },
   {
-    text: "No hidden charges and transparent pricing. Registration was quick and hassle-free.",
+    text: "Professional team and zero hidden charges. One of the most trusted plotted developers in Hyderabad.",
     name: "Lakshmi Devi",
     role: "Homemaker",
   },
 ];
 
 const TestimonialsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const [active, setActive] = useState(0);
   const [pause, setPause] = useState(false);
-  const { ref, isVisible } = useScrollAnimation();
 
-  /* AUTO SLIDE */
+  /* Auto Slide */
   useEffect(() => {
     if (pause) return;
     const interval = setInterval(
@@ -59,15 +58,15 @@ const TestimonialsSection = () => {
         {/* Heading */}
         <div className="text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-gold">
-            Customer Reviews
+            Testimonials
           </span>
 
-          <h2 className="mt-2 font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+          <h2 className="mt-2 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Trusted by Thousands of Families
           </h2>
 
           <p className="mt-3 text-muted-foreground">
-            Real feedback from happy plot owners across Hyderabad
+            Real experiences from our happy plot owners
           </p>
         </div>
 
@@ -77,7 +76,7 @@ const TestimonialsSection = () => {
           onMouseEnter={() => setPause(true)}
           onMouseLeave={() => setPause(false)}
         >
-          {/* Quote background */}
+          {/* Quote BG */}
           <Quote className="absolute -top-6 left-4 h-20 w-20 text-gold/10" />
 
           <div className="rounded-2xl border border-border bg-card/80 backdrop-blur-xl p-8 md:p-12 text-center shadow-xl">
@@ -89,7 +88,7 @@ const TestimonialsSection = () => {
             </div>
 
             {/* Text */}
-            <p className="font-display text-xl italic text-foreground md:text-2xl leading-relaxed">
+            <p className="font-display text-xl md:text-2xl italic text-foreground leading-relaxed">
               “{testimonial.text}”
             </p>
 
@@ -104,7 +103,7 @@ const TestimonialsSection = () => {
             </div>
           </div>
 
-          {/* NAVIGATION */}
+          {/* Navigation */}
           <div className="mt-6 flex items-center justify-center gap-4">
             {/* Prev */}
             <button
@@ -144,9 +143,9 @@ const TestimonialsSection = () => {
             </button>
           </div>
 
-          {/* Trust footer */}
+          {/* Trust Footer */}
           <p className="mt-6 text-center text-sm text-muted-foreground">
-            ⭐ Rated highly by customers across Hyderabad
+            ⭐ Rated highly by plot buyers across Hyderabad
           </p>
         </div>
       </div>
