@@ -50,7 +50,7 @@ const HeroSection = () => {
 
                     {/* Location Chips */}
                     <div className="mt-6 flex flex-wrap gap-3 text-xs">
-                        {["Shankarpally", "Kothur", "Nandigama", "Kollur"].map(
+                        {["Shankarpally", "Kothur", "Nandigama", "Kollur", "thukkuguda", "Adibatla"].map(
                             (loc) => (
                                 <span
                                     key={loc}
