@@ -7,14 +7,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 
-const projects = [
-  "Bhashyam Green Valley",
-  "Bhashyam Royal County",
-  "Bhashyam Smart City",
-  "Bhashyam Nature Enclave",
-  "Bhashyam Siri Township",
-  "Bhashyam Golden Acres",
+const projectOptions = [
+  "Emerald County",
+  "Heritage County",
+  "Rainbow County",
+  "Cyber County",
+  "Oxygen County",
+  "Crystal County",
 ];
+
+const sizeOptions = ["67 sq yds", "100 sq yds", "150 sq yds", "200 sq yds", "300 sq yds", "400 sq yds"];
 
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -73,15 +75,21 @@ const ContactSection = () => {
                   <SelectValue placeholder="Preferred Project" />
                 </SelectTrigger>
                 <SelectContent>
-                  {projects.map((p) => (
+                  {projectOptions.map((p) => (
                     <SelectItem key={p} value={p}>{p}</SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-              <Input
-                type="date"
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground focus:border-gold"
-              />
+              <Select>
+                <SelectTrigger className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground">
+                  <SelectValue placeholder="Plot Size (sq yds)" />
+                </SelectTrigger>
+                <SelectContent>
+                  {sizeOptions.map((s) => (
+                    <SelectItem key={s} value={s}>{s}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
             <Textarea
               placeholder="Your Message"
@@ -102,9 +110,9 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="flex flex-col justify-center space-y-8">
             {[
-              { icon: Phone, label: "+91 98765 43210", href: "tel:+919876543210" },
-              { icon: Mail, label: "info@bhashyamdeveloper.com", href: "mailto:info@bhashyamdeveloper.com" },
-              { icon: MapPin, label: "Bhashyam Tower, Banjara Hills, Hyderabad – 500034" },
+              { icon: Phone, label: "+91 9000216677", href: "tel:+919000216677" },
+              { icon: Mail, label: "naveen@bhashyamplots.com", href: "mailto:naveen@bhashyamplots.com" },
+              { icon: MapPin, label: "F 201, Sri Sai Govardhan Kunj, Near Community Hall, Opp: Ratnadeep Super Market, SR Nagar Ameerpet, Hyderabad – 500038" },
               { icon: Clock, label: "Mon – Sat, 9 AM – 7 PM" },
             ].map(({ icon: Icon, label, href }) => (
               <div key={label} className="flex items-start gap-4">
@@ -117,7 +125,7 @@ const ContactSection = () => {
                       {label}
                     </a>
                   ) : (
-                    <p className="text-lg text-primary-foreground/80">{label}</p>
+                    <p className="text-primary-foreground/80">{label}</p>
                   )}
                 </div>
               </div>

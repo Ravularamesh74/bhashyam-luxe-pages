@@ -4,7 +4,7 @@ import { Shield, Award, BadgeCheck } from "lucide-react";
 const badges = [
   { icon: Shield, label: "HMDA Approved" },
   { icon: BadgeCheck, label: "RERA Registered" },
-  { icon: Award, label: "ISO Certified" },
+  { icon: Award, label: "DTCP Approved" },
 ];
 
 const AboutSection = () => {
@@ -27,15 +27,15 @@ const AboutSection = () => {
             <span className="text-gradient-gold">Plotting Futures</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Bhashyam Developer has been transforming the Hyderabad real estate
-            landscape since 2008. With HMDA, DTCP, and RERA approved projects,
-            we bring transparency, quality infrastructure, and prime locations to
-            every plot we sell.
+            <strong className="text-foreground">Bhashyam Developers</strong> is a renowned real estate company in Hyderabad with over <strong className="text-foreground">15 years of experience</strong> in developing open villa plots. We are known for our quality, reliability, and on-time delivery.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            Our commitment to clear legal titles, world-class amenities, and
-            customer satisfaction has made us one of the most trusted names in
-            Hyderabad's residential plots market.
+            Our ventures are gated community villa projects equipped with premium amenities, such as underground drainage system, 24/7 security, and more. We provide government-approved plots of 67 to 400 square yards in prime locations throughout Hyderabad.
+          </p>
+
+          <h3 className="mt-8 font-display text-xl font-bold text-foreground">Our Vision</h3>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            Our vision is to be the leading real estate developer in Hyderabad, known for our commitment to quality, customer satisfaction, and ethical business practices. We strive to create value for our customers by developing innovative and sustainable projects.
           </p>
 
           {/* Trust badges */}
