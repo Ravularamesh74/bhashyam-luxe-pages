@@ -122,7 +122,7 @@ const ContactSection = () => {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/919502653758"
+              href="https://wa.me/918008717779"
               target="_blank"
               className="flex items-center justify-center gap-2 text-sm text-green-400 hover:text-green-300"
             >
@@ -135,8 +135,8 @@ const ContactSection = () => {
             {[
               {
                 icon: Phone,
-                label: "+91 95026 53758 / 91 80087 17779",
-                href: "tel:+919502653758",
+                label: "+91 80087 17779",
+                href: "tel:+918008717779",
               },
               {
                 icon: Mail,

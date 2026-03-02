@@ -139,10 +139,10 @@ const Footer = () => {
             {/* QUICK CONTACT */}
             <div className="mt-6 space-y-2 text-sm text-primary-foreground/60">
               <a
-                href="tel:+919502653758"
+                href="tel:+918008717779"
                 className="flex items-center gap-2 hover:text-gold"
               >
-                <Phone size={14} /> +91 95026 53758
+                <Phone size={14} /> +91 80087 17779
               </a>
 
               <a
@@ -153,7 +153,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://wa.me/919502653758"
+                href="https://wa.me/918008717779"
                 target="_blank"
                 className="flex items-center gap-2 text-green-400 hover:text-green-300"
               >

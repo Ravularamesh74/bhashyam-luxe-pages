@@ -59,7 +59,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="https://wa.me/919502653758"
+              href="https://wa.me/918008717779"
               target="_blank"
               rel="noopener noreferrer"
             >

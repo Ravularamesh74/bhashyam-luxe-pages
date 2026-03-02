@@ -29,7 +29,7 @@ Phone: ${phone}
 Email: ${email}
 Message: ${message}`;
 
-        const whatsappUrl = `https://wa.me/919502653758?text=${encodeURIComponent(
+        const whatsappUrl = `https://wa.me/918008717779?text=${encodeURIComponent(
             text
         )}`;
 
@@ -140,7 +140,7 @@ Message: ${message}`;
                         {[
                             {
                                 icon: Phone,
-                                label: "+91 95026 53758 / +91 80087 17779",
+                                label: "+91 80087 17779",
                             },
                             {
                                 icon: Mail,
@@ -166,7 +166,7 @@ Message: ${message}`;
 
                         {/* WhatsApp CTA */}
                         <a
-                            href="https://wa.me/919502653758"
+                            href="https://wa.me/918008717779"
                             target="_blank"
                             className="inline-block mt-4"
                         >

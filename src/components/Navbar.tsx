@@ -41,11 +41,11 @@ const Navbar = () => {
           {/* Contact */}
           <div className="flex items-center gap-6">
             <a
-              href="tel:+919502653758"
+              href="tel:+918008717779"
               className="flex items-center gap-1.5 hover:text-gold"
             >
               <Phone size={12} />
-              +91 95026 53758 / +91 80087 17779
+              +91 80087 17779
             </a>
 
             <a
@@ -75,8 +75,8 @@ const Navbar = () => {
       {/* MAIN NAVBAR */}
       <nav
         className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-            ? "bg-card/80 backdrop-blur-xl shadow-lg border-b border-border"
-            : "bg-card"
+          ? "bg-card/80 backdrop-blur-xl shadow-lg border-b border-border"
+          : "bg-card"
           }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
@@ -103,7 +103,7 @@ const Navbar = () => {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/919502653758"
+              href="https://wa.me/918008717779"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -147,7 +147,7 @@ const Navbar = () => {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919502653758"
+                href="https://wa.me/918008717779"
                 target="_blank"
                 onClick={() => setIsOpen(false)}
               >
